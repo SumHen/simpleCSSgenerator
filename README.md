@@ -9,7 +9,7 @@
 - **Tiny animations**
 
 ## Live Demo🚀
-(https://sumhen.github.io//simpleCSSgenerator)
+https://sumhen.github.io/simpleCSSgenerator/
 
 ## Built With🛠️:
 - HTML5
