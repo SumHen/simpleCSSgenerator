@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An CSS generator that give you live preview before using the code!">
+    </head>
+    <body>
+        <div><h>CSS Generator</h></div>
+
+        <div class="container">
+            <div class="generator">
+               <div class="titles">Box Radius</div>
+               <div class="preview" id="previewBox"></div>
+
+               <label>All Corners: <input type="range" id="allCorners" min="0" max="100"></label><br>
+               <label>Top-Left Radius: <input type="range" id="tl" min="0" max="100"></label><br>
+               <label>Top-Right Radius: <input type="range" id="tr" min="0" max="100"></label><br>
+               <label>Bottom-Right Radius: <input type="range" id="br" min="0" max="100"></label><br>
+               <label>Bottom-Left Radius: <input type="range" id="bl" min="0" max="100"></label><br>
+
+               <div class="output">
+                   <code id="cssCode">border-radius: 0px 0px 0px 0px</code>
+                   <button onclick="copyCSS()">Copy</button>
+               </div>
+            </div>
+            <div class="generator">
+                <div class="titles">Box Shadow</div>
+                <div class="preview" id="shadowPreview"></div>
+         
+                <label>Horizontal: <input type="range" id="hOffset" min="-50" max="50" value="0"></label><br>
+                <label>Vertical: <input type="range" id="vOffset" min="-50" max="50" value="0"></label><br>
+                <label>Blur: <input type="range" id="blur" min="0" max="50" value="5"></label><br>
+                <label>Spread: <input type="range" id="spread" min="0" max="20" value="0"></label><br>
+                <label>Color: <input type="color" id="shadowColor" value="#000000"></label>
+        
+                <div class="output">
+                    <code id="shadowCode">box-shadow: 0px 0px 5px 0px #000000</code>
+                    <button onclick="copyShadowCSS()">Copy</button>
+               </div>
+            </div>
+                <div class="generator">
+                <div class="titles">Gradient Generator</div>
+                <div class="preview" id="gradientPreview"></div>
+
+                <label>Direction: 
+                    <select id="gradientDirection">
+                        <option value="to right"> Horizontal</option>
+                        <option value="to bottom"> Vertical</option>
+                        <option value="to right bottom"> Diagonal</option>
+                        <option value="135deg"> 135° Angle</option>
+                        <option value="circle"> Radial</option>
+                    </select>
+                </label>
+
+                <div class="color-picker">
+                    <label>Color 1: <input type="color" id="color1" value="#4CAF50"></label>
+                    <label>Color 2: <input type="color" id="color2" value="#2196F3"></label>
+                </div>
+
+                <button id="randomGradient">🎲 Random Gradient</button>
+        
+                <div class="output">
+                    <code id="gradientCode">background: linear-gradient(to right, #4CAF50, #2196F3);</code>
+                    <button onclick="copyGradientCSS()">Copy</button>
+               </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
