@@ -8,6 +8,9 @@
 - **Tweak every parameter**
 - **Tiny animations**
 
+## Live Demo🚀
+https://github.io/SumHen/simpleCSSgenerator
+
 ## Built With🛠️:
 - HTML5
 - CSS3 (Flexbox)
